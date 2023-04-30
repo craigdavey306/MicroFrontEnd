@@ -10,6 +10,7 @@ const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
+    // public path for finding the appropriate files when pushed to S3 on AWS
     publicPath: '/container/latest/',
   },
   plugins: [
